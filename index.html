@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolex</title>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span>Rolex</span>
+            </div>
+            <ul>
+                <li><a href="collections.html">Collection</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="menu">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="feature">
+            <div class="img">
+                <img src="images/pic2.jpg" alt="Rolex Daytona Rose Gold">
+            </div>
+
+            <div class="title">
+                <h1>Rolex Daytona Rose Gold</h1>
+            </div>
+
+            <div class="btn">
+                <a href="order.html">Order Now</a>
+            </div>
+        </section>
+
+        <footer class="media">
+            <ul>
+                <li><a href="https://www.facebook.com/Rolex" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/Rolex" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/Rolex" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </footer>
+    </main>
+
+    <script>
+           TweenMax.from(".logo", 1, {
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom("nav ul li", 1, {
+            opacity: 0,
+            x: -20,
+            ease: Power3.easeInOut
+        }, 0.08)
+
+        TweenMax.from(".search", 1, {
+            opacity: 0,
+            delay: .5,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".menu", 1, {
+            opacity: 0,
+            delay: .6,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".title", 1, {
+            opacity: 0,
+            delay: 1,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".btn", 1, {
+            opacity: 0,
+            delay: 1.6,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".line-one", 1, {
+            opacity: 0,
+            delay: 2,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".line-two", 1, {
+            opacity: 0,
+            delay: 2.5,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".img", 2, {
+            opacity: 0,
+            delay: 2.9,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".year", 1, {
+            opacity: 0,
+            delay: 1.4,
+            y: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom(".media ul li", 2, {
+            opacity: 0,
+            delay: 3.2,
+            y: 40,
+            ease: Expo.easeInOut
+        }, 0.2)
+    </script>
+</body>
+
+</html>
