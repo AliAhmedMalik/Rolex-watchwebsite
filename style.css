@@ -39,7 +39,12 @@ nav {
 nav .logo {
     font-weight: bold;
     text-transform: uppercase;
+    color: white;
 }
+
+nav:hover {
+    cursor: default;
+  }
 
 nav ul {
     list-style: none;
@@ -68,7 +73,7 @@ nav ul li a::after {
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    background: gold;
+    background: goldenrod;
     transition: width 0.4s;
 }
 
@@ -114,24 +119,6 @@ nav ul li a:hover::after {
     color: gold;
 }
 
-.media ul {
-    list-style: none;
-    position: fixed;
-    right: 20px;
-    top: 60%; 
-    padding: 10px 10px;
-}
-
-.media ul li {
-    cursor: pointer;
-    font-size: 18px;
-    margin: 24px 0;
-    transition: .3s;
-}
-
-.media ul li:hover {
-    transform: scale(1.8);
-}
 
 /* Responsive Design for smaller screens */
 @media (max-width: 768px) {
